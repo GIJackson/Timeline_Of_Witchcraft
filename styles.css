@@ -46,6 +46,13 @@ body {
     margin: 0%;
   }
 
+.hiddenHover{ 
+  display: none;
+}
+.hoverable:hover .hiddenHover{
+  display : block;
+}
+
 .nav-links a {
   color: #fff;
 }
