@@ -37,7 +37,7 @@ section {
 
 .no-parallax {
   background-color: rgba(62,25,88,1);
-  background-image: url(Images/mark-tegethoff-NbgQfUvKFE0-unsplash.jpg);
+  background-image: url(Images/Moon_Transition.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -78,7 +78,7 @@ section h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #3d0863;
     color: #fff;
     padding: 16px 0;
     margin: 0%;
@@ -224,8 +224,55 @@ input[type=checkbox]:checked ~ .menu{
 }
 
 /* APPLYING MEDIA QUERIES */
-@media (min-width: 1200px){
- 
+
+/* Widescreen media query */
+@media (min-width: 3200px){
+
+  .navbar {
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d0863;
+    color: #fff;
+    padding: 0;
+    margin: 0%;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .hoverable {
+    font-size: larger;
+  }
+  .menu { 
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #3d0863;
+  }
+  .dropdown {
+    left: -50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  
+  .dropdown li:hover {
+    background-color: rgba(62,25,88,1);
+  }
+
+  .services:hover .dropdown {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dropdown {
+    left: -50%;
+    top: -20px;
+    transform: translateX(20%);
+  }
 }
 
 /* Desktop media query */

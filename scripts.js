@@ -1,13 +1,10 @@
-const imgNames = ['Creepy_Pumpkins.jpg','Fairy_Candles.jpg','Sunset_moon.jpg']
-
-console.log(Math.floor(Math.random() * 3))
+const imgNames = ['Creepy_Pumpkins.jpg','Fairy_Candles.jpg','Sunset_Moon.jpg','Early_Witchery.jpg','Late_Witchery.jpg','Tall_Candles.jpg','Witch_Paraphernalia.jpg','Witch_Rocks.jpg']
 
 function randomImage(num) {
     const randomNumber = Math.floor(Math.random() * num)
     return imgNames[randomNumber]
 }
 randomImage(imgNames.length)
-
 
 const imgSection = document.getElementById('randomimg')
 
